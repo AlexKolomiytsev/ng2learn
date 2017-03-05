@@ -4,6 +4,7 @@ import {Product} from './models/product.model'
 @Component({
   selector: 'app-root',
   template: `
+    <demo-from-sku></demo-from-sku>
     <div class="inventory-app">
         <products-list
         [productList]="products"
