@@ -44,4 +44,4 @@ export class DemoFromSkuComponent implements OnInit {
 
 }
 
-//TODO: continue with page 144 (removing the sku instance variable)
+//TODO: continue with page 151 (http), but at first start with merging feature/* branches to master
