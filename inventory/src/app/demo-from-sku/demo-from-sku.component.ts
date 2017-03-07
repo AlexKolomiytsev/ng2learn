@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, AbstractControl, Validators} from '@angular/forms'
+import {skuValidator} from '../validators/sku.validator'
 
 @Component({
   selector: 'demo-from-sku',
@@ -12,7 +13,9 @@ export class DemoFromSkuComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      'sku': ['', Validators.required]
+      'sku': ['', Validators.compose([
+        Validators.required, skuValidator
+      ])]
     })
 
     this.sku = this.myForm.controls['sku']
