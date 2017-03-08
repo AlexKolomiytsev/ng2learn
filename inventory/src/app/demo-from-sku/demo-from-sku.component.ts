@@ -43,5 +43,3 @@ export class DemoFromSkuComponent implements OnInit {
   }
 
 }
-
-//TODO: continue with page 151 (http), but at first start with merging feature/* branches to master
