@@ -10,6 +10,7 @@ import { ProductImageComponent } from './product-image/product-image.component';
 import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { DemoFromSkuComponent } from './demo-from-sku/demo-from-sku.component';
+import { HttpExampleComponent } from './http-example/http-example.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DemoFromSkuComponent } from './demo-from-sku/demo-from-sku.component';
     ProductImageComponent,
     PriceDisplayComponent,
     ProductDepartmentComponent,
-    DemoFromSkuComponent
+    DemoFromSkuComponent,
+    HttpExampleComponent
   ],
   imports: [
     BrowserModule,
