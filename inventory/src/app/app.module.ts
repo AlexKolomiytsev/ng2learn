@@ -13,6 +13,8 @@ import { ProductDepartmentComponent } from './product-department/product-departm
 import { DemoFromSkuComponent } from './demo-from-sku/demo-from-sku.component';
 import { HttpExampleComponent } from './http-example/http-example.component';
 import { YoutubeSearchComponent } from './youtube-search/youtube-search.component';
+import { YoutubeSearchBoxComponent } from './youtube-search-box/youtube-search-box.component';
+import { YoutubeSearchResultsComponent } from './youtube-search-results/youtube-search-results.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { YoutubeSearchComponent } from './youtube-search/youtube-search.componen
     ProductDepartmentComponent,
     DemoFromSkuComponent,
     HttpExampleComponent,
-    YoutubeSearchComponent
+    YoutubeSearchComponent,
+    YoutubeSearchBoxComponent,
+    YoutubeSearchResultsComponent
   ],
   imports: [
     BrowserModule,
