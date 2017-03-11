@@ -31,3 +31,4 @@ export class HttpExampleComponent implements OnInit {
 }
 
 //TODO: continue with page #158 'Writing a YouTubeSearchComponent'
+//TODO: check angular2-webpack-starter examples
