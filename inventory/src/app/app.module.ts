@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule, Routes} from '@angular/router'
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import {APP_BASE_HREF} from '@angular/common';
 
 
 import {YoutubeServiceInjectables} from './injectables/youtubeService.injectables'
@@ -52,7 +52,10 @@ import {routes} from './routes/main'
     RouterModule.forRoot(routes)
   ],
   providers: [
-    YoutubeServiceInjectables
+    YoutubeServiceInjectables,
+    //used instead of declaring <base href="/"> in index.html
+    //path after './' depends on paths where our components contains
+    {provide: APP_BASE_HREF, useValue: '/app'}
   ],
   bootstrap: [RouterAppComponent] //AppComponent
 })
