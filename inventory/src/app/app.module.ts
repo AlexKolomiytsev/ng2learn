@@ -52,10 +52,11 @@ import {routes} from './routes/main'
     RouterModule.forRoot(routes)
   ],
   providers: [
-    YoutubeServiceInjectables,
+    YoutubeServiceInjectables
     //used instead of declaring <base href="/"> in index.html
     //path after './' depends on paths where our components contains
-    {provide: APP_BASE_HREF, useValue: '/app'}
+    //(it is bad to set base value in this way, do it always in index.html)
+    // {provide: APP_BASE_HREF, useValue: '/app'}
   ],
   bootstrap: [RouterAppComponent] //AppComponent
 })
