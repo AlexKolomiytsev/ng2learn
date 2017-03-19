@@ -20,9 +20,10 @@ import { AlbumComponent } from './components/album/album.component'
  * Services
  */
 import { SPOTIFY_PROVIDERS } from './services/spotify.service';
+import { AUTH_PROVIDERS } from './services/auth.service'
 
 
-import { routes } from './app.routes'
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { routes } from './app.routes'
     RouterModule.forRoot(routes)
   ],
   providers: [
-    SPOTIFY_PROVIDERS
+    SPOTIFY_PROVIDERS,
+    AUTH_PROVIDERS
   ],
   bootstrap: [RootComponent]
 })
