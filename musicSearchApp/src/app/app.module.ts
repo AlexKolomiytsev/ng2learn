@@ -12,14 +12,15 @@ import { RouterModule } from '@angular/router'
  */
 import { RootComponent } from './components/root/root.component';
 import { SearchComponent } from './components/search/search.component';
+import { ArtistComponent } from './components/artist/artist.component';
+import { TrackComponent } from './components/track/track.component';
+import { AlbumComponent } from './components/album/album.component'
 
 /*
  * Services
  */
 import { SPOTIFY_PROVIDERS } from './services/SpotifyService.service';
-import { ArtistComponent } from './components/artist/artist.component';
-import { TrackComponent } from './components/track/track.component';
-import { AlbumComponent } from './components/album/album.component'
+
 
 import { routes } from './app.routes'
 
