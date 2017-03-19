@@ -13,6 +13,3 @@ export class RouterAppComponent implements OnInit {
   }
 
 }
-
-
-//TODO: continue with 'Music Search App' (p. 204)
