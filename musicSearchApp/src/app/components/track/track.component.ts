@@ -8,7 +8,7 @@ import {Location} from '@angular/common'
 /*
  * Services
  */
-import {SpotifyService} from "../../services/SpotifyService.service";
+import {SpotifyService} from "../../services/spotify.service";
 
 @Component({
   selector: 'track',

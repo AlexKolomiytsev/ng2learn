@@ -19,7 +19,7 @@ import { AlbumComponent } from './components/album/album.component'
 /*
  * Services
  */
-import { SPOTIFY_PROVIDERS } from './services/SpotifyService.service';
+import { SPOTIFY_PROVIDERS } from './services/spotify.service';
 
 
 import { routes } from './app.routes'

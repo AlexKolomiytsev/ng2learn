@@ -7,7 +7,7 @@ import {Router, ActivatedRoute} from '@angular/router'
 /*
  * Services
  */
-import {SpotifyService} from '../../services/SpotifyService.service';
+import {SpotifyService} from '../../services/spotify.service';
 
 @Component({
   selector: 'search',
