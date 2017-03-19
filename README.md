@@ -8,3 +8,7 @@
 ###### {APP_NAME}/src/app/components/{componentName}
 
 `ng g component components/{componentName} --spec=false`
+
+## Start development server
+`ng serve --hmr --open`
+

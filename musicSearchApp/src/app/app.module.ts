@@ -1,20 +1,45 @@
+/*
+ * Angular imports
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router'
 
-import { AppComponent } from './components/root/root.component';
+/*
+ * Components
+ */
+import { RootComponent } from './components/root/root.component';
+import { SearchComponent } from './components/search/search.component';
+
+/*
+ * Services
+ */
+import { SPOTIFY_PROVIDERS } from './services/SpotifyService.service';
+import { ArtistComponent } from './components/artist/artist.component';
+import { TrackComponent } from './components/track/track.component';
+import { AlbumComponent } from './components/album/album.component'
+
+import { routes } from './app.routes'
 
 @NgModule({
   declarations: [
-    AppComponent
+    RootComponent,
+    SearchComponent,
+    ArtistComponent,
+    TrackComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    SPOTIFY_PROVIDERS
+  ],
+  bootstrap: [RootComponent]
 })
 export class AppModule { }
