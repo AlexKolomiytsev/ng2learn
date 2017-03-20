@@ -15,6 +15,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { TrackComponent } from './components/track/track.component';
 import { AlbumComponent } from './components/album/album.component'
+import { LoginComponent } from './components/login/login.component';
 
 /*
  * Services
@@ -22,16 +23,27 @@ import { AlbumComponent } from './components/album/album.component'
 import { SPOTIFY_PROVIDERS } from './services/spotify.service';
 import { AUTH_PROVIDERS } from './services/auth.service'
 
+/*
+ * Services
+ */
+import { LoggedInGuard } from './guards/loggedIn.guard'
 
+/*
+ * Routes
+ */
 import { routes } from './app.routes';
 
+/*
+ * ngModule
+ */
 @NgModule({
   declarations: [
     RootComponent,
     SearchComponent,
     ArtistComponent,
     TrackComponent,
-    AlbumComponent
+    AlbumComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +53,8 @@ import { routes } from './app.routes';
   ],
   providers: [
     SPOTIFY_PROVIDERS,
-    AUTH_PROVIDERS
+    AUTH_PROVIDERS,
+    LoggedInGuard
   ],
   bootstrap: [RootComponent]
 })
