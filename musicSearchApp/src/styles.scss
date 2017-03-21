@@ -2,4 +2,24 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+body {
+  @extend .container;
+}
+
+nav {
+  @extend .navbar;
+  @extend .navbar-default;
+
+  > a {
+    @extend .navbar-brand;
+  }
+
+  > ul {
+    @extend .nav;
+    @extend .navbar-nav;
+  }
+}
+
 @import "./app/style/sportify";
+@import "./app/style/chat";
+@import "./app/style/nested";
