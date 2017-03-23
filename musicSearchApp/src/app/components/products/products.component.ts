@@ -71,4 +71,4 @@ export const routes: Routes = [
 })
 export class ProductsComponentModule {}
 
-//TODO: 'Nested Routes' complete; start with 'Dependency Injection' (p. 239)
+//TODO: start with 'ngModule' (p. 264)
