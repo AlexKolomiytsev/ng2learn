@@ -16,6 +16,10 @@ import {ArtistComponent} from './components/artist/artist.component';
 import {TrackComponent} from './components/track/track.component';
 import {AlbumComponent} from './components/album/album.component'
 import {LoginComponent} from './components/login/login.component';
+
+/*
+ * Components` modules
+ */
 import {ProductsComponentModule} from './components/products/products.component';
 
 /*
