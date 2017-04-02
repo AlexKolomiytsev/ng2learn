@@ -71,4 +71,4 @@ export const routes: Routes = [
 })
 export class ProductsComponentModule {}
 
-//TODO: start with 'Data Architecture in Angular 2' (p. 270)
+//TODO: start with 'Chat App Overview' (p. 274)
