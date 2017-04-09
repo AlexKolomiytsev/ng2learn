@@ -70,5 +70,3 @@ export const routes: Routes = [
   imports: [RouterModule]
 })
 export class ProductsComponentModule {}
-
-//TODO: start with 'Chat App Overview' (p. 274)
