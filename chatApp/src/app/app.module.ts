@@ -1,10 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+/*
+ * Angular
+ */
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
-import { AppComponent } from './components/root/app.component';
+/*
+ * Components
+ */
+import {AppComponent} from './components/root/app.component';
 
+/*
+ * Services
+ */
+import {USER_PROVIDERS} from './services/user.service';
+import {MESSAGES_PROVIDERS} from './services/messages.service'
+
+/*
+ * Ng Module
+ */
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +29,10 @@ import { AppComponent } from './components/root/app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    USER_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
