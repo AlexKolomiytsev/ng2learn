@@ -16,6 +16,7 @@ import {AppComponent} from './components/root/app.component';
  */
 import {USER_PROVIDERS} from './services/user.service';
 import {MESSAGES_PROVIDERS} from './services/messages.service'
+import {THREADS_PROVIDERS} from './services/threads.service'
 
 /*
  * Ng Module
@@ -30,7 +31,9 @@ import {MESSAGES_PROVIDERS} from './services/messages.service'
     HttpModule
   ],
   providers: [
-    USER_PROVIDERS
+    USER_PROVIDERS,
+    MESSAGES_PROVIDERS,
+    THREADS_PROVIDERS
   ],
   bootstrap: [AppComponent]
 })

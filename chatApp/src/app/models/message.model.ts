@@ -1,7 +1,13 @@
+/*
+ * Project imports
+ */
 import {User} from "./user.model";
 import {Thread} from "./thread.model";
 import {uuid} from "../utils/helpers";
 
+/*
+ * Model
+ */
 export class Message {
   id: string
   sentAt: Date

@@ -1,5 +1,12 @@
+/*
+ * System imports
+ */
 import {Injectable} from "@angular/core";
 import {BehaviorSubject, Subject} from "rxjs";
+
+/*
+ * Project imports
+ */
 import {User} from "../models/user.model";
 
 @Injectable()

@@ -1,5 +1,11 @@
+/*
+ * Project imports
+ */
 import { uuid } from '../utils/helpers'
 
+/*
+ * Model
+ */
 export class User {
   id: string
 

@@ -1,6 +1,12 @@
-import {uuid} from '../utils/helpers'
+/*
+ * Project imports
+ */
 import {Message} from "./message.model";
+import {uuid} from '../utils/helpers'
 
+/*
+ * Model
+ */
 export class Thread {
   id: string
   lastMessage: Message

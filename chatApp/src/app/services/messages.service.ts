@@ -1,5 +1,5 @@
 /*
- * Angular
+ * System imports
  */
 import {Injectable} from "@angular/core";
 import {Observable, Subject} from "rxjs";
@@ -113,5 +113,3 @@ export class MessagesService {
 export const MESSAGES_PROVIDERS: Array<any> = [
   {provide: MessagesService, useClass: MessagesService}
 ]
-
-//TODO: 'Sharing the Stream' p.287
