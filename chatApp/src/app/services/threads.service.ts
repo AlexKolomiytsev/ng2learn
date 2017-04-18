@@ -55,4 +55,4 @@ export const THREADS_PROVIDERS: Array<any> = [
 
  */
 
-//TODO: continue with 'Trying out the ThreadsService' (p. 299)
+//TODO: continue with 'A chronological list of Threads, newest-first (in orderedthreads)' (p. 301)
