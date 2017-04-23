@@ -9,6 +9,12 @@
 
 `ng g component components/{componentName} --spec=false`
 
+## Generate new pipe
+##### will generate the following pipe:
+###### {APP_NAME}/src/app/pipes/{pipeName}
+
+`ng g pipe pipes/{pipeName} --spec=false`
+
 ## Start development server
 `ng serve --hmr --open`
 
