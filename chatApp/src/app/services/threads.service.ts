@@ -16,6 +16,14 @@ import {MessagesService} from './messages.service'
 export class ThreadsService {
   // `threads` is a observable that contains the most up to date list of threads
   threads: Observable<{ [key: string]: Thread }>
+  // `orderedThreads` contains a newest-first chronological list of threads
+  orderedThreads: Observable<Thread[]>
+  // `currentThread` contains the currently selected thread
+  currentThread: Subject<Thread> = new BehaviorSubject<Thread>(new Thread())
+  // `currentThreadMessages` contains the set of messages for the currently
+  // selected thread
+  currentThreadMessages: Observable<Message[]>
+
 
   constructor(public messagesService: MessagesService) {
     this.threads = messagesService.messages
@@ -38,6 +46,32 @@ export class ThreadsService {
         return threads
       })
 
+    this.orderedThreads = this.threads
+      .map((threadGroups: { [key: string]: Thread}) => {
+        const threads: Thread[] = _.values(threadGroups)
+        return _.sortBy(threads, (t: Thread) => t.lastMessage.sentAt).reverse()
+      })
+
+    this.currentThread.subscribe(this.messagesService.markThreadAsRead)
+
+    this.currentThreadMessages = this.currentThread
+      .combineLatest(messagesService.messages, (currentThread: Thread, messages: Message[]) => {
+        if (currentThread && messages.length > 0) {
+          return _.chain(messages)
+            .filter((message: Message) => message.thread.id === currentThread.id)
+            .map((message: Message) => {
+              message.isRead = true
+              return message
+            })
+            .value()
+        } else {
+          return []
+        }
+      })
+  }
+
+  setCurrentThread(newThread: Thread): void {
+    this.currentThread.next(newThread)
   }
 }
 
