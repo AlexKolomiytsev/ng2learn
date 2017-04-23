@@ -14,6 +14,8 @@ import {ChatThreadsComponent} from './components/chat-threads/chat-threads.compo
 import {ChatThreadComponent} from './components/chat-thread/chat-thread.component'
 import {ChatWindowComponent} from './components/chat-window/chat-window.component'
 import {ChatMessageComponent} from './components/chat-message/chat-message.component'
+import {ChatNavBarComponent} from './components/chat-nav-bar/chat-nav-bar.component';
+import {ChatPageComponent} from './components/chat-page/chat-page.component'
 
 /*
  * Services
@@ -26,7 +28,6 @@ import {THREADS_PROVIDERS} from './services/threads.service'
  * Pipes
  */
 import {FromNowPipe} from './pipes/from-now.pipe';
-import { ChatNavBarComponent } from './components/chat-nav-bar/chat-nav-bar.component'
 
 /*
  * Ng Module
@@ -39,7 +40,8 @@ import { ChatNavBarComponent } from './components/chat-nav-bar/chat-nav-bar.comp
     ChatWindowComponent,
     ChatMessageComponent,
     FromNowPipe,
-    ChatNavBarComponent
+    ChatNavBarComponent,
+    ChatPageComponent
   ],
   imports: [
     BrowserModule,
