@@ -1,9 +1,9 @@
 /*
  * System imports
  */
-import * as _ from 'lodash'
 import {Injectable} from "@angular/core"
 import {Subject, BehaviorSubject, Observable} from 'rxjs'
+import * as _ from 'lodash'
 
 /*
  * Project imports
@@ -23,7 +23,6 @@ export class ThreadsService {
   // `currentThreadMessages` contains the set of messages for the currently
   // selected thread
   currentThreadMessages: Observable<Message[]>
-
 
   constructor(public messagesService: MessagesService) {
     this.threads = messagesService.messages
