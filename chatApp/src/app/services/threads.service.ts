@@ -88,4 +88,4 @@ export const THREADS_PROVIDERS: Array<any> = [
 
  */
 
-//TODO: continue with 'A chronological list of Threads, newest-first (in orderedthreads)' (p. 301)
+//TODO: continue with 'Introduction to Redux with TypeScript' (p. 334)
