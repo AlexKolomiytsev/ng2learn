@@ -88,4 +88,4 @@ export const THREADS_PROVIDERS: Array<any> = [
 
  */
 
-//TODO: continue with 'Introduction to Redux with TypeScript' (p. 334)
+//TODO: continue with 'Storing our state' (p. 343)
