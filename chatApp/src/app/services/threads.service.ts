@@ -88,4 +88,4 @@ export const THREADS_PROVIDERS: Array<any> = [
 
  */
 
-//TODO: continue with 'Storing our state' (p. 343)
+//TODO: continue with 'Intermediate Redux in Angular' (p. 372)
