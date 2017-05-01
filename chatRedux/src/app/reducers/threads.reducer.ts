@@ -101,4 +101,4 @@ export const getUnreadMessagesCount = createSelector(
   }, 0)
 );
 
-//TODO: continue with 'Building the ChatThreadsComponent' (p.402)
+//TODO: continue with 'Building the ChatWindowComponent' (p.408)

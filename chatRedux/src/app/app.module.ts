@@ -8,12 +8,16 @@ import {appStoreProviders} from './app.store'
 import { AppComponent } from './components/root/app.component';
 import { ChatPageComponent } from './components/chat-page/chat-page.component';
 import { ChatNavBarComponent } from './components/chat-nav-bar/chat-nav-bar.component';
+import { ChatThreadsComponent } from './components/chat-threads/chat-threads.component';
+import { ChatThreadComponent } from './components/chat-thread/chat-thread.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatPageComponent,
-    ChatNavBarComponent
+    ChatNavBarComponent,
+    ChatThreadsComponent,
+    ChatThreadComponent
   ],
   imports: [
     BrowserModule,
