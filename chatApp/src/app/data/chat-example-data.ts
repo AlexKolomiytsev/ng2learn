@@ -56,7 +56,6 @@ export class ChatExampleData {
               threadsService: ThreadsService,
               UserService: UserService): void {
 
-    // TODO make `messages` hot
     messagesService.messages.subscribe(() => ({}));
 
     // set "Juliet" as the current user

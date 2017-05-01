@@ -88,4 +88,3 @@ export const THREADS_PROVIDERS: Array<any> = [
 
  */
 
-//TODO: continue with 'Intermediate Redux in Angular' (p. 372)
