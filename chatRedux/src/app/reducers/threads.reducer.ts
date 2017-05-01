@@ -101,4 +101,11 @@ export const getUnreadMessagesCount = createSelector(
   }, 0)
 );
 
+export const getAllMessages = createSelector(
+  getAllThreads,
+  ( threads: Thread[] ) =>
+    threads.reduce( // gather all messages
+      (messages, thread) => [...messages, ...thread.messages],
+      []).sort((m1, m2) => m1.sentAt - m2.sentAt)); // sort them by time
+
 //TODO: continue with 'Building the ChatWindowComponent' (p.408)

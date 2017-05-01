@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import {appStoreProviders} from './app.store'
 
+import {FromNowPipe} from './pipes/from-now.pipe'
+
 import { AppComponent } from './components/root/app.component';
 import { ChatPageComponent } from './components/chat-page/chat-page.component';
 import { ChatNavBarComponent } from './components/chat-nav-bar/chat-nav-bar.component';
 import { ChatThreadsComponent } from './components/chat-threads/chat-threads.component';
 import { ChatThreadComponent } from './components/chat-thread/chat-thread.component';
+import { ChatWindowComponent } from './components/chat-window/chat-window.component';
+import { ChatMessageComponent } from './components/chat-message/chat-message.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,19 @@ import { ChatThreadComponent } from './components/chat-thread/chat-thread.compon
     ChatPageComponent,
     ChatNavBarComponent,
     ChatThreadsComponent,
-    ChatThreadComponent
+    ChatThreadComponent,
+    ChatWindowComponent,
+    ChatMessageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [appStoreProviders],
+  providers: [
+    appStoreProviders,
+    FromNowPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
