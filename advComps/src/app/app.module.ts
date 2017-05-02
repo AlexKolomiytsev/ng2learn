@@ -13,6 +13,9 @@ import { ExternalStyleComponent } from './components/styles/external-style/exter
 import { NativeEncapsulationComponent } from './components/styles/native-encapsulation/native-encapsulation.component';
 import { NoEncapsulationComponent } from './components/styles/no-encapsulation/no-encapsulation.component';
 import { HostForPopupComponent } from './components/host-for-popup/host-for-popup.component';
+import { TabsExampleComponent } from './components/tabs-example/tabs-example.component';
+import { TabComponent } from './components/tabs-example/tab/tab.component';
+import { TabsetComponent } from './components/tabs-example/tabset/tabset.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HostForPopupComponent } from './components/host-for-popup/host-for-popu
     NoEncapsulationComponent,
     HostForPopupComponent,
     PopupDirective,
-    ContentProjection
+    ContentProjection,
+    TabsExampleComponent,
+    TabComponent,
+    TabsetComponent
   ],
   imports: [
     BrowserModule,
