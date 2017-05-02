@@ -107,5 +107,3 @@ export const getAllMessages = createSelector(
     threads.reduce( // gather all messages
       (messages, thread) => [...messages, ...thread.messages],
       []).sort((m1, m2) => m1.sentAt - m2.sentAt)); // sort them by time
-
-//TODO: continue with 'Building the ChatWindowComponent' (p.408)
