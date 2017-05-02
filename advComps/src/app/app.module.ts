@@ -41,3 +41,5 @@ import { TabsetComponent } from './components/tabs-example/tabset/tabset.compone
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+//todo: continue with 'Lifecycle Hooks' p.450
